@@ -1,11 +1,10 @@
-<!-- ==================== INDEX.HTML (HOME PAGE) ==================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Wimpy Kidz | Premium Streetwear</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wimpy Kidz | Preloved Apparel for Everyone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,11 +12,12 @@
     <header class="site-header">
         <div class="container nav-container">
             <div class="logo">
-                <a href="index.html">
-                    <span class="logo-icon">WK</span>
-                    <span>wimpy kidz</span>
-                </a>
-            </div>
+    <a href="index.html">
+        <img src="WimpyKidz.jpeg" alt="Icon" style="height: 35px; border-radius: 8px;">
+        <span class="logo-text">wimpy kidz</span>
+        <span class="logo-sub">preloved outfits</span>
+    </a>
+</div>
             <nav class="main-nav">
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="nav-item active">Home</a></li>
@@ -26,7 +26,10 @@
                     <li><a href="contact.html" class="nav-item">Contact</a></li>
                 </ul>
                 <div class="cart-icon-wrapper">
-                    <button id="cart-btn" class="cart-btn" aria-label="Shopping cart"><i class="fas fa-shopping-bag"></i><span id="cart-count" class="cart-count">0</span></button>
+                    <button id="cart-btn" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </button>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             </nav>
@@ -37,31 +40,31 @@
         <section class="section hero-section">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <span class="hero-badge">WimPy Kidz Collection</span>
-                    <h1>Effortless style.<br>Uncompromising quality.</h1>
-                    <p>Minimalist design meets everyday comfort. Wimpy Kidz delivers refined streetwear for the modern individual.</p>
+                    <span class="hero-badge">♻️ PRELOVED FASHION FOR EVERYONE</span>
+                    <h1>Style that<br>comes <span class="highlight">full circle.</span></h1>
+                    <p>Wimpy Kidz is a preloved clothing destination. Every piece gets a second life — unique style with a story.</p>
                     <div class="hero-buttons">
-                        <a href="shop.html" class="btn-primary">Shop Collection →</a>
-                        <a href="about.html" class="btn-outline">About Us</a>
+                        <a href="shop.html" class="btn-primary">Shop Preloved →</a>
+                        <a href="about.html" class="btn-outline">Our Story</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="WimpyKidz.jpeg" alt="Modern streetwear" class="hero-img">
+                    <img src="WimpyKidz.jpeg" alt="Wimpy Kidz Preloved" class="hero-img">
                 </div>
             </div>
             <div class="container">
                 <div class="trust-badge-row">
-                    <span><i class="fas fa-shield-alt"></i> Secure checkout</span>
-                    <span><i class="fas fa-undo-alt"></i> Free returns • 30 days</span>
-                    <span><i class="fas fa-leaf"></i> Sustainable fabrics</span>
-                    <span><i class="fas fa-headset"></i> 24/7 support</span>
+                    <span><i class="fas fa-leaf"></i> Preloved & Circular</span>
+                    <span><i class="fas fa-globe"></i> For Everyone</span>
+                    <span><i class="fas fa-hand-holding-heart"></i> Sustainable Fashion</span>
+                    <span><i class="fas fa-truck"></i> Fast Shipping</span>
                 </div>
             </div>
         </section>
 
         <section class="section featured-section">
             <div class="container">
-                <h2 class="section-title">MOST POPULAR</h2>
+                <h2 class="section-title">✨ Most Loved Preloved Picks</h2>
                 <div class="products-grid" id="featured-grid"></div>
             </div>
         </section>
@@ -71,34 +74,37 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h4>wimpy kidz</h4>
-                    <p>Refined essentials for the discerning.</p>
+                    <h4>wimpy kidz preloved</h4>
+                    <p>♻️ Preloved. Proud. For Everyone.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Help</h4>
-                    <a href="#">Shipping</a>
-                    <a href="#">Returns</a>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Returns Policy</a>
                     <a href="#">Size Guide</a>
                 </div>
                 <div class="footer-col">
                     <h4>Connect</h4>
                     <a href="#">Instagram</a>
                     <a href="#">Twitter</a>
-                    <a href="#">Newsletter</a>
+                    <a href="#">TikTok</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Wimpy Kidz — All rights reserved.</p>
+                <p>© 2026 Wimpy Kidz Preloved — Fashion for Everyone</p>
             </div>
         </div>
     </footer>
 
     <div id="cartOverlay" class="cart-overlay"></div>
     <div id="cartSidebar" class="cart-sidebar">
-        <div class="cart-header"><h3>Your Cart</h3><button id="closeCartBtn" class="close-cart">×</button></div>
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h3>
+            <button id="closeCartBtn" class="close-cart">×</button>
+        </div>
         <div id="cartItemsList" class="cart-items"></div>
         <div id="cartTotal" class="cart-total">Total: ₱0.00</div>
-        <button id="checkoutBtn" class="checkout-btn">Checkout →</button>
+        <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout →</button>
     </div>
 
     <script src="cart.js"></script>
@@ -107,17 +113,36 @@
             { id: 1, name: "Sweat Shirt", price: 1800, img: "Wimpy.png" },
             { id: 2, name: "Oversized Tee", price: 700, img: "wimpy2.jpg" },
             { id: 3, name: "Cargo Pants", price: 2000, img: "wimpy3.avif" },
-            { id: 4, name: "Nfl Beanie", price: 1850, img: "Wimpy4.jpg" }
+            { id: 4, name: "NFL Beanie", price: 1850, img: "Wimpy4.jpg" }
         ];
+
         function renderFeatured() {
             const grid = document.getElementById('featured-grid');
             if(grid) {
-                grid.innerHTML = featuredProducts.map(p => `<div class="product-card"><img src="${p.img}" class="product-img"><div class="product-info"><div class="product-title">${p.name}</div><div class="product-price">₱${p.price.toLocaleString()}</div><button class="add-to-cart" data-id="${p.id}">Add to cart</button></div></div>`).join('');
-                document.querySelectorAll('.add-to-cart').forEach(btn => { btn.addEventListener('click', (e) => { const id = parseInt(btn.dataset.id); const prod = featuredProducts.find(p=>p.id===id); if(window.addToCart) window.addToCart(prod); }); });
+                grid.innerHTML = featuredProducts.map(p => `
+                    <div class="product-card">
+                        <span class="preloved-tag">♻️ Preloved</span>
+                        <img src="${p.img}" class="product-img" alt="${p.name}" onerror="this.src='https://placehold.co/400x500/4A7C59/white?text=Wimpy+Kidz'">
+                        <div class="product-info">
+                            <div class="product-title">${p.name}</div>
+                            <div class="product-price">₱${p.price.toLocaleString()}</div>
+                            <button class="add-to-cart" data-id="${p.id}">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                `).join('');
+                document.querySelectorAll('.add-to-cart').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const id = parseInt(btn.dataset.id);
+                        const prod = featuredProducts.find(p=>p.id===id);
+                        if(window.addToCart) window.addToCart(prod);
+                    });
+                });
             }
         }
         renderFeatured();
-        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => { document.getElementById('navLinks')?.classList.toggle('mobile-open'); });
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+            document.getElementById('navLinks')?.classList.toggle('mobile-open');
+        });
     </script>
 </body>
 </html>

@@ -1,26 +1,36 @@
-<!-- ==================== ABOUT.HTML ==================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wimpy Kidz | About</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Wimpy Kidz | About - Preloved Apparel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-container">
-            <div class="logo"><a href="index.html"><span class="logo-icon">WK</span><span>wimpy kidz</span></a></div>
+            <div class="logo">
+    <a href="index.html">
+        <img src="WimpyKidz.jpeg" alt="Icon" style="height: 35px; border-radius: 8px;">
+        <span class="logo-text">wimpy kidz</span>
+        <span class="logo-sub">preloved outfits</span>
+    </a>
+</div>
             <nav class="main-nav">
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="nav-item">Home</a></li>
                     <li><a href="shop.html" class="nav-item">Shop</a></li>
                     <li><a href="about.html" class="nav-item active">About</a></li>
                     <li><a href="contact.html" class="nav-item">Contact</a></li>
                 </ul>
-                <div class="cart-icon-wrapper"><button id="cart-btn" class="cart-btn"><i class="fas fa-shopping-bag"></i><span id="cart-count" class="cart-count">0</span></button></div>
+                <div class="cart-icon-wrapper">
+                    <button id="cart-btn" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </button>
+                </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             </nav>
         </div>
@@ -31,17 +41,18 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text">
-                        <span class="about-badge">Since 2026</span>
-                        <h2>Clothing with purpose.</h2>
-                        <p><strong>Wimpy Kidz </strong> was born from the belief that great design deserves a second life. We partner with certified sustainable manufacturers AND our own community to give timeless pieces a new home. Each pre-loved item is carefully inspected, cleaned, and restored to extend its journey — reducing waste and celebrating the character that comes with wear.</p>
+                        <span class="about-badge">♻️ Since 2026</span>
+                        <h2>Clothing with a <span class="highlight">second life.</span></h2>
+                        <p><strong>Wimpy Kidz Preloved</strong> is a preloved clothing destination for everyone. Every item is carefully inspected, cleaned, and restored — reducing waste and celebrating the character that comes with wear.</p>
+                        <p>Great style shouldn't cost the Earth. Shop second-hand, feel good, and join the circular fashion movement.</p>
                         <div class="stats-row">
-                            <div><span class="stat-num">100%</span><span>Organic Cotton</span></div>
+                            <div><span class="stat-num">100%</span><span>Curated Vintage</span></div>
                             <div><span class="stat-num">1:1</span><span>Carbon Offset</span></div>
-                            <div><span class="stat-num">5%</span><span>Donated</span></div>
+                            <div><span class="stat-num">5%</span><span>Donated to Earth</span></div>
                         </div>
                     </div>
                     <div class="about-image">
-                        <img src="WimpyKidz.jpeg" alt="Sustainable manufacturing">
+                        <img src="WimpyKidz.jpeg" alt="Sustainable fashion" onerror="this.src='https://placehold.co/500x500/4A7C59/white?text=Wimpy+Kidz'">
                     </div>
                 </div>
             </div>
@@ -51,25 +62,30 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col"><h4>wimpy kidz</h4><p>Refined essentials.</p></div>
-                <div class="footer-col"><h4>Help</h4><a href="#">Shipping</a><a href="#">Returns</a></div>
+                <div class="footer-col"><h4>wimpy kidz preloved</h4><p>♻️ Preloved. Proud. For Everyone.</p></div>
+                <div class="footer-col"><h4>Help</h4><a href="#">Shipping Info</a><a href="#">Returns Policy</a></div>
                 <div class="footer-col"><h4>Connect</h4><a href="#">Instagram</a><a href="#">Twitter</a></div>
             </div>
-            <div class="footer-bottom"><p>© 2025 Wimpy Kidz</p></div>
+            <div class="footer-bottom"><p>© 2026 Wimpy Kidz Preloved — Fashion for Everyone</p></div>
         </div>
     </footer>
 
     <div id="cartOverlay" class="cart-overlay"></div>
     <div id="cartSidebar" class="cart-sidebar">
-        <div class="cart-header"><h3>Your Cart</h3><button id="closeCartBtn" class="close-cart">×</button></div>
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h3>
+            <button id="closeCartBtn" class="close-cart">×</button>
+        </div>
         <div id="cartItemsList" class="cart-items"></div>
         <div id="cartTotal" class="cart-total">Total: ₱0.00</div>
-        <button id="checkoutBtn" class="checkout-btn">Checkout →</button>
+        <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout →</button>
     </div>
 
     <script src="cart.js"></script>
     <script>
-        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => { document.getElementById('navLinks')?.classList.toggle('mobile-open'); });
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+            document.getElementById('navLinks')?.classList.toggle('mobile-open');
+        });
     </script>
 </body>
 </html>
