@@ -1,26 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wimpy Kidz | Contact</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Wimpy Kidz | Contact - Preloved Apparel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-container">
-            <div class="logo"><a href="index.html"><span class="logo-icon">WK</span><span>wimpy kidz</span></a></div>
+            <div class="logo">
+    <a href="index.html">
+        <img src="WimpyKidz.jpeg" alt="Icon" style="height: 35px; border-radius: 8px;">
+        <span class="logo-text">wimpy kidz</span>
+        <span class="logo-sub">preloved outfits</span>
+    </a>
+</div>>
             <nav class="main-nav">
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="nav-item">Home</a></li>
-                    <li><a href="Shop.html" class="nav-item">Shop</a></li>
+                    <li><a href="shop.html" class="nav-item">Shop</a></li>
                     <li><a href="about.html" class="nav-item">About</a></li>
                     <li><a href="contact.html" class="nav-item active">Contact</a></li>
                 </ul>
-                <div class="cart-icon-wrapper"><button id="cart-btn" class="cart-btn"><i class="fas fa-shopping-bag"></i><span id="cart-count" class="cart-count">0</span></button></div>
+                <div class="cart-icon-wrapper">
+                    <button id="cart-btn" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </button>
+                </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             </nav>
         </div>
@@ -29,29 +39,39 @@
     <main>
         <section class="section contact-page">
             <div class="container">
+                <div class="contact-header">
+                    <h2>Let's connect.</h2>
+                    <p>Questions about a piece? Want to donate clothes? We'd love to hear from you.</p>
+                </div>
                 <div class="contact-grid">
-                    <div class="contact-info-panel">
-                        <h2>Let's connect.</h2>
-                        <p>For inquiries about orders, wholesale, or collaborations — our team responds within 24 hours.</p>
-                        <div class="contact-details">
-                            <div><i class="fas fa-envelope"></i> Mjbt15@wimpykidz.com</div>
-                            <div><i class="fas fa-phone-alt"></i> 09647604186</div>
-                            <div><i class="fas fa-map-pin"></i> TAGUMBAO GERONA TARLAC</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div><strong>Email Us</strong><br>Mjbt15@wimpykidz.com</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div><strong>Call or Text</strong><br>+63 964 760 4186</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-pin"></i>
+                            <div><strong>Visit Us</strong><br>Tagumbao, Gerona, Tarlac</div>
                         </div>
                         <div class="social-links">
+                            <h4>Follow Us</h4>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
-                    <div class="contact-form-panel">
+                    <div class="contact-form">
                         <form id="contactForm">
-                            <div class="form-row">
-                                <div class="form-group"><input type="text" placeholder="Full name" id="contactName" required></div>
-                                <div class="form-group"><input type="email" placeholder="Email address" id="contactEmail" required></div>
-                            </div>
-                            <div class="form-group"><textarea rows="5" placeholder="How can we help?" id="contactMsg"></textarea></div>
-                            <button type="submit" class="submit-btn">Send Message →</button>
+                            <input type="text" placeholder="Your Full Name" id="contactName" required>
+                            <input type="email" placeholder="Your Email Address" id="contactEmail" required>
+                            <input type="tel" placeholder="Phone Number (optional)" id="contactPhone">
+                            <textarea rows="5" placeholder="How can we help you?" id="contactMsg"></textarea>
+                            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
                             <p id="formFeedback" class="form-feedback"></p>
                         </form>
                     </div>
@@ -63,36 +83,44 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col"><h4>wimpy kidz</h4><p>Refined essentials.</p></div>
-                <div class="footer-col"><h4>Help</h4><a href="#">Shipping</a><a href="#">Returns</a></div>
+                <div class="footer-col"><h4>wimpy kidz preloved</h4><p>♻️ Preloved. Proud. For Everyone.</p></div>
+                <div class="footer-col"><h4>Help</h4><a href="#">Shipping Info</a><a href="#">Returns Policy</a></div>
                 <div class="footer-col"><h4>Connect</h4><a href="#">Instagram</a><a href="#">Twitter</a></div>
             </div>
-            <div class="footer-bottom"><p>© 2026 Wimpy Kidz</p></div>
+            <div class="footer-bottom"><p>© 2026 Wimpy Kidz Preloved — Fashion for Everyone</p></div>
         </div>
     </footer>
 
     <div id="cartOverlay" class="cart-overlay"></div>
     <div id="cartSidebar" class="cart-sidebar">
-        <div class="cart-header"><h3>Your Cart</h3><button id="closeCartBtn" class="close-cart">×</button></div>
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h3>
+            <button id="closeCartBtn" class="close-cart">×</button>
+        </div>
         <div id="cartItemsList" class="cart-items"></div>
         <div id="cartTotal" class="cart-total">Total: ₱0.00</div>
-        <button id="checkoutBtn" class="checkout-btn">Checkout →</button>
+        <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout →</button>
     </div>
 
     <script src="cart.js"></script>
     <script>
-        document.getElementById('contactForm')?.addEventListener('submit', (e) => { 
-            e.preventDefault(); 
-            const name = document.getElementById('contactName').value.trim(); 
-            const email = document.getElementById('contactEmail').value.trim(); 
-            if(!name || !email) document.getElementById('formFeedback').innerText = 'Please complete all fields.'; 
-            else { 
-                document.getElementById('formFeedback').innerHTML = 'Message received. We\'ll reply shortly.'; 
-                document.getElementById('contactForm').reset(); 
-                setTimeout(()=>document.getElementById('formFeedback').innerText='', 3000); 
-            } 
+        document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            if(!name || !email) {
+                document.getElementById('formFeedback').innerHTML = '<i class="fas fa-exclamation-circle"></i> Please fill in all required fields.';
+                document.getElementById('formFeedback').style.color = '#E86A2C';
+            } else {
+                document.getElementById('formFeedback').innerHTML = '<i class="fas fa-check-circle"></i> Message sent! We\'ll reply within 24 hours. ♻️';
+                document.getElementById('formFeedback').style.color = '#4A7C59';
+                document.getElementById('contactForm').reset();
+                setTimeout(()=>document.getElementById('formFeedback').innerHTML='', 4000);
+            }
         });
-        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => { document.getElementById('navLinks')?.classList.toggle('mobile-open'); });
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+            document.getElementById('navLinks')?.classList.toggle('mobile-open');
+        });
     </script>
 </body>
 </html>
